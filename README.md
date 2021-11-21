@@ -21,8 +21,6 @@ The CSVIntervalData element should contain at least 1 row for each of "100", "20
 "200" row must be followed by at least 1 "300" row
 Remove leading and trailing white spaces, tabs, additional newlines.
 
-1) what was done, 2) what wasn't done, 3) what would be done with more time
-
 The solution I created is a Python script that takes any XML file and spits out a CSV file called 'output.csv' and satisfies most of the conditions except for:
 "Remove any trailing white spaces, tabs" as will be explained on the challenges faced.
 
