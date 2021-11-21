@@ -38,5 +38,6 @@ What wasn't done:
 What would have been done if there was more time:
 -I have designed a template to match the rows starting with "100" as columns for rows starting with "200" but realized that was out of scope and try to parse the data on rows starting with "300" as those seemed to contain important data but didn't test much further with it.
 -Also, test further for data that didn't match the initial testfile.xml (i.e. what happens if one of the data starts with "Tes 1" instead of "TES") and further filtering so the data is more presentable to the end user (i.e. having columns that show what each datum means in this context).
+-Check the placement and order of the XML file if the CSV data is on "InternalCSVData".
 
 Time taken: 4 hours with 1 hour of updating and setting up the Python environment
