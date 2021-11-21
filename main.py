@@ -2,26 +2,26 @@
 import xml.etree.ElementTree as Xet
 import pandas as pd
   
-cols = ["name", "phone", "email", "date", "country"]
-rows = []
+#inital setup
+headers =["100", "200", "300", "900"]
+cols=[]
+rows=[]
+interval_data=""
+
+header_count=0
+interval_counter=0
+trailer_count=0
   
 # Parsing the XML file
-xmlparse = Xet.parse('sample.xml')
+xmlparse = Xet.parse('testfile.xml')
 root = xmlparse.getroot()
 for i in root:
-    name = i.find("name").text
-    phone = i.find("phone").text
-    email = i.find("email").text
-    date = i.find("date").text
-    country = i.find("country").text
+    interval_data=i.find("CSVIntervalData").text
+
+    print(interval_data)
+    #rows.append()
   
-    rows.append({"name": name,
-                 "phone": phone,
-                 "email": email,
-                 "date": date,
-                 "country": country})
-  
-df = pd.DataFrame(rows, columns=cols)
+#df = pd.DataFrame(rows, columns=cols)#for version 2
   
 # Writing dataframe to csv
-df.to_csv('output.csv')
+#df.to_csv('output.csv')
