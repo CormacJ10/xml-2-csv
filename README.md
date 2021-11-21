@@ -24,7 +24,9 @@ Remove leading and trailing white spaces, tabs, additional newlines.
 The solution I created is a Python script that takes any XML file and spits out a CSV file called 'output.csv' and satisfies most of the conditions except for:
 "Remove any trailing white spaces, tabs" as will be explained on the challenges faced.
 
-What was Done: (Please note: You would need to install Jupyter Notebook to run the solution as Python has issues with the panda library being called outside of Anaconda or the Pycharm IDE)
+(Please note: You would need to install Jupyter Notebook to run the solution as Python has issues with the panda library being called outside of Anaconda or the Pycharm IDE, and please keep the testfile.xml on the same directory as the Gentrack.ipynb file)
+
+What was Done:
 The following were done via the python script:
 Extract out the data found in the CSVIntervalData element with the following conditions,
 Create a separate CSV file for each block of data within the CSVIntervalData element that starts with "200"
